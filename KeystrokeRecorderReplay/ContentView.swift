@@ -85,8 +85,9 @@ struct ContentView: View {
             Spacer()
         }
         .padding()
-        .frame(width: 500, height: 400)
-    }
+            .frame(width: 300, height: 400) // Adjusted width to make it narrower
+            .background(viewModel.isRecording ? Color.red.opacity(0.3) : (viewModel.isReplaying ? Color.yellow.opacity(0.3) : Color.clear))
+        }
 }
 
 struct ContentView_Previews: PreviewProvider {

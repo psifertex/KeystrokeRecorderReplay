@@ -18,6 +18,13 @@ struct KeystrokeRecorderReplayApp: App {
                     // Assign the ViewModel to the AppDelegate
                     appDelegate.viewModel = viewModel
                     viewModel.checkAccessibilityPermissions()
+                    viewModel.updateAppIcon()
+                }
+                .onChange(of: viewModel.isRecording) { _ in
+                    viewModel.updateAppIcon()
+                }
+                .onChange(of: viewModel.isReplaying) { _ in
+                    viewModel.updateAppIcon()
                 }
         }
     }
@@ -30,6 +37,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var hotKeyRefF12: EventHotKeyRef? = nil
     
     func applicationDidFinishLaunching(_ notification: Notification) {
+        // Prompt for Accessibility permissions on launch
+        let options: NSDictionary = [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as NSString: true]
+        _ = AXIsProcessTrustedWithOptions(options)
+        
         // Register global hotkeys
         registerGlobalHotKeys()
     }
@@ -45,15 +56,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let options: NSDictionary = [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as NSString: true]
         let accessEnabled = AXIsProcessTrustedWithOptions(options)
         if !accessEnabled {
-            // Permissions not granted, prompt the user and terminate
+            // Permissions not granted, prompt the user
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 let alert = NSAlert()
                 alert.messageText = "Accessibility Permissions Required"
                 alert.informativeText = "Accessibility permissions are required for this app to function properly. Please enable them in System Preferences."
                 alert.alertStyle = .critical
+                alert.addButton(withTitle: "Open System Preferences")
                 alert.addButton(withTitle: "Quit")
-                alert.runModal()
-                NSApp.terminate(nil)
+                let response = alert.runModal()
+                if response == .alertFirstButtonReturn {
+                    if let url = URL(string: "x-apple.systempreferences:com.apple.preference.security?Privacy_Accessibility") {
+                        NSWorkspace.shared.open(url)
+                    }
+                } else {
+                    NSApp.terminate(nil)
+                }
             }
             return
         }
@@ -311,6 +329,17 @@ class RecorderViewModel: ObservableObject {
         guard isReplaying else { return }
         replayTask?.cancel()
         isReplaying = false
+    }
+    
+    // Update the app icon based on the current state
+    func updateAppIcon() {
+        if isRecording {
+            NSApp.applicationIconImage = NSImage(named: "AppIconRecording")
+        } else if isReplaying {
+            NSApp.applicationIconImage = NSImage(named: "AppIconReplaying")
+        } else {
+            NSApp.applicationIconImage = NSImage(named: "AppIcon")
+        }
     }
 }
 
