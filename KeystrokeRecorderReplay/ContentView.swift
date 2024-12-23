@@ -43,15 +43,18 @@ struct ContentView: View {
             
             VStack(alignment: .leading, spacing: 10) {
                 HStack {
-                    Text("Macro Run Count: \(viewModel.macroRunCount)")
-                    Stepper("", value: $viewModel.macroRunCount, in: 1...100)
-                        .labelsHidden()
+                    Text("Macro Run Count:")
+                    TextField("Run Count", value: $viewModel.macroRunCount, formatter: NumberFormatter())
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .frame(width: 50)
                 }
                 
                 HStack {
-                    Text("Delay Between Runs: \(String(format: "%.1f", viewModel.macroRunDelay))s")
-                    Slider(value: $viewModel.macroRunDelay, in: 0...10, step: 0.5)
-                        .frame(width: 200)
+                    Text("Delay Between Runs:")
+                    TextField("Delay", value: $viewModel.macroRunDelay, formatter: NumberFormatter())
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .frame(width: 50)
+                    Text("s")
                 }
             }
             .padding(.horizontal, 40)

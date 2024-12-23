@@ -47,6 +47,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         if !accessEnabled {
             // Permissions not granted, prompt the user and terminate
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                let alert = NSAlert()
+                alert.messageText = "Accessibility Permissions Required"
+                alert.informativeText = "Accessibility permissions are required for this app to function properly. Please enable them in System Preferences."
+                alert.alertStyle = .critical
+                alert.addButton(withTitle: "Quit")
+                alert.runModal()
                 NSApp.terminate(nil)
             }
             return
@@ -208,10 +214,13 @@ class RecorderViewModel: ObservableObject {
                 if type == .keyDown || type == .leftMouseDown || type == .rightMouseDown {
                     let viewModel = Unmanaged<RecorderViewModel>.fromOpaque(refcon!).takeUnretainedValue()
                     if let start = viewModel.startTime {
-                        let timestamp = CFAbsoluteTimeGetCurrent() - start
-                        let recordedEvent = RecorderViewModel.RecordedEvent(event: event.copy()!, timestamp: timestamp)
-                        DispatchQueue.main.async {
-                            viewModel.recordedEvents.append(recordedEvent)
+                        let keyCode = event.getIntegerValueField(.keyboardEventKeycode)
+                        if keyCode != kVK_F11 && keyCode != kVK_F12 {
+                            let timestamp = CFAbsoluteTimeGetCurrent() - start
+                            let recordedEvent = RecorderViewModel.RecordedEvent(event: event.copy()!, timestamp: timestamp)
+                            DispatchQueue.main.async {
+                                viewModel.recordedEvents.append(recordedEvent)
+                            }
                         }
                     }
                 }
