@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		1D87D37C2D19D29600379CF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D87D3622D19D29600379CF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D87D3692D19D29600379CF0;
+			remoteInfo = KeystrokeRecorderReplay;
+		};
+		1D87D3862D19D29600379CF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D87D3622D19D29600379CF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D87D3692D19D29600379CF0;
+			remoteInfo = KeystrokeRecorderReplay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D87D36A2D19D29600379CF0 /* KeystrokeRecorderReplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeystrokeRecorderReplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D87D37B2D19D29600379CF0 /* KeystrokeRecorderReplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeystrokeRecorderReplayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D87D3852D19D29600379CF0 /* KeystrokeRecorderReplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeystrokeRecorderReplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1D87D36C2D19D29600379CF0 /* KeystrokeRecorderReplay */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KeystrokeRecorderReplay;
+			sourceTree = "<group>";
+		};
+		1D87D37E2D19D29600379CF0 /* KeystrokeRecorderReplayTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KeystrokeRecorderReplayTests;
+			sourceTree = "<group>";
+		};
+		1D87D3882D19D29600379CF0 /* KeystrokeRecorderReplayUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KeystrokeRecorderReplayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D87D3672D19D29600379CF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D87D3782D19D29600379CF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D87D3822D19D29600379CF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D87D3612D19D29600379CF0 = {
+			isa = PBXGroup;
+			children = (
+				1D87D36C2D19D29600379CF0 /* KeystrokeRecorderReplay */,
+				1D87D37E2D19D29600379CF0 /* KeystrokeRecorderReplayTests */,
+				1D87D3882D19D29600379CF0 /* KeystrokeRecorderReplayUITests */,
+				1D87D36B2D19D29600379CF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D87D36B2D19D29600379CF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D87D36A2D19D29600379CF0 /* KeystrokeRecorderReplay.app */,
+				1D87D37B2D19D29600379CF0 /* KeystrokeRecorderReplayTests.xctest */,
+				1D87D3852D19D29600379CF0 /* KeystrokeRecorderReplayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D87D3692D19D29600379CF0 /* KeystrokeRecorderReplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D87D38F2D19D29600379CF0 /* Build configuration list for PBXNativeTarget "KeystrokeRecorderReplay" */;
+			buildPhases = (
+				1D87D3662D19D29600379CF0 /* Sources */,
+				1D87D3672D19D29600379CF0 /* Frameworks */,
+				1D87D3682D19D29600379CF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1D87D36C2D19D29600379CF0 /* KeystrokeRecorderReplay */,
+			);
+			name = KeystrokeRecorderReplay;
+			packageProductDependencies = (
+			);
+			productName = KeystrokeRecorderReplay;
+			productReference = 1D87D36A2D19D29600379CF0 /* KeystrokeRecorderReplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1D87D37A2D19D29600379CF0 /* KeystrokeRecorderReplayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D87D3922D19D29600379CF0 /* Build configuration list for PBXNativeTarget "KeystrokeRecorderReplayTests" */;
+			buildPhases = (
+				1D87D3772D19D29600379CF0 /* Sources */,
+				1D87D3782D19D29600379CF0 /* Frameworks */,
+				1D87D3792D19D29600379CF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D87D37D2D19D29600379CF0 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1D87D37E2D19D29600379CF0 /* KeystrokeRecorderReplayTests */,
+			);
+			name = KeystrokeRecorderReplayTests;
+			packageProductDependencies = (
+			);
+			productName = KeystrokeRecorderReplayTests;
+			productReference = 1D87D37B2D19D29600379CF0 /* KeystrokeRecorderReplayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1D87D3842D19D29600379CF0 /* KeystrokeRecorderReplayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D87D3952D19D29600379CF0 /* Build configuration list for PBXNativeTarget "KeystrokeRecorderReplayUITests" */;
+			buildPhases = (
+				1D87D3812D19D29600379CF0 /* Sources */,
+				1D87D3822D19D29600379CF0 /* Frameworks */,
+				1D87D3832D19D29600379CF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D87D3872D19D29600379CF0 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1D87D3882D19D29600379CF0 /* KeystrokeRecorderReplayUITests */,
+			);
+			name = KeystrokeRecorderReplayUITests;
+			packageProductDependencies = (
+			);
+			productName = KeystrokeRecorderReplayUITests;
+			productReference = 1D87D3852D19D29600379CF0 /* KeystrokeRecorderReplayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D87D3622D19D29600379CF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					1D87D3692D19D29600379CF0 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					1D87D37A2D19D29600379CF0 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 1D87D3692D19D29600379CF0;
+					};
+					1D87D3842D19D29600379CF0 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 1D87D3692D19D29600379CF0;
+					};
+				};
+			};
+			buildConfigurationList = 1D87D3652D19D29600379CF0 /* Build configuration list for PBXProject "KeystrokeRecorderReplay" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D87D3612D19D29600379CF0;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1D87D36B2D19D29600379CF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D87D3692D19D29600379CF0 /* KeystrokeRecorderReplay */,
+				1D87D37A2D19D29600379CF0 /* KeystrokeRecorderReplayTests */,
+				1D87D3842D19D29600379CF0 /* KeystrokeRecorderReplayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D87D3682D19D29600379CF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D87D3792D19D29600379CF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D87D3832D19D29600379CF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D87D3662D19D29600379CF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D87D3772D19D29600379CF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D87D3812D19D29600379CF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D87D37D2D19D29600379CF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D87D3692D19D29600379CF0 /* KeystrokeRecorderReplay */;
+			targetProxy = 1D87D37C2D19D29600379CF0 /* PBXContainerItemProxy */;
+		};
+		1D87D3872D19D29600379CF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D87D3692D19D29600379CF0 /* KeystrokeRecorderReplay */;
+			targetProxy = 1D87D3862D19D29600379CF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D87D38D2D19D29600379CF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D87D38E2D19D29600379CF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1D87D3902D19D29600379CF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KeystrokeRecorderReplay/KeystrokeRecorderReplay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KeystrokeRecorderReplay/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.psifertex.KeystrokeRecorderReplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1D87D3912D19D29600379CF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KeystrokeRecorderReplay/KeystrokeRecorderReplay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KeystrokeRecorderReplay/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.psifertex.KeystrokeRecorderReplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1D87D3932D19D29600379CF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.psifertex.KeystrokeRecorderReplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeystrokeRecorderReplay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeystrokeRecorderReplay";
+			};
+			name = Debug;
+		};
+		1D87D3942D19D29600379CF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.psifertex.KeystrokeRecorderReplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeystrokeRecorderReplay.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeystrokeRecorderReplay";
+			};
+			name = Release;
+		};
+		1D87D3962D19D29600379CF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.psifertex.KeystrokeRecorderReplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KeystrokeRecorderReplay;
+			};
+			name = Debug;
+		};
+		1D87D3972D19D29600379CF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.psifertex.KeystrokeRecorderReplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = KeystrokeRecorderReplay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D87D3652D19D29600379CF0 /* Build configuration list for PBXProject "KeystrokeRecorderReplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D87D38D2D19D29600379CF0 /* Debug */,
+				1D87D38E2D19D29600379CF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D87D38F2D19D29600379CF0 /* Build configuration list for PBXNativeTarget "KeystrokeRecorderReplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D87D3902D19D29600379CF0 /* Debug */,
+				1D87D3912D19D29600379CF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D87D3922D19D29600379CF0 /* Build configuration list for PBXNativeTarget "KeystrokeRecorderReplayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D87D3932D19D29600379CF0 /* Debug */,
+				1D87D3942D19D29600379CF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D87D3952D19D29600379CF0 /* Build configuration list for PBXNativeTarget "KeystrokeRecorderReplayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D87D3962D19D29600379CF0 /* Debug */,
+				1D87D3972D19D29600379CF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D87D3622D19D29600379CF0 /* Project object */;
+}
